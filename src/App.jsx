@@ -1,14 +1,12 @@
-import { Header } from "./components/reader"
-function App() {
+import { Outlet } from 'react-router-dom'; 
+import { Header } from './components/Header'; 
 
+function App() {
   return (
-     <div>
-      <Header title={"Projeto POO"}/>
-      <Header title={"E-commerce"}/>
-      <Header/>
-      <Header/>
-      <Header/>
-     </div>
+    <div>
+      <Header title={"E-commerce"} />
+      <Outlet />
+    </div>
   )
 }
 
